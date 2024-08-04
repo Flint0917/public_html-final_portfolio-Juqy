@@ -32,6 +32,13 @@ ul{
   line-height: 2;
 }
 
+.pdf{
+  background-color: #F6DCAC;
+  color: black;
+  text-align: right;
+  padding: 25px 15%;
+}
+
 .feature-box{
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
@@ -49,14 +56,14 @@ ul{
 
 /*Education*/
 #education{
-  color:white;
-  background-color: #35A29F;
+  color:black;
+  background-color: #F6DCAC;
   padding: 0 15%;
 }
 
 /*Skills*/
 #skills{
-  background-color: #F6DCAC;
+  background-color: #35A29F;
   padding: 0 15%;
 }
 
@@ -85,8 +92,7 @@ h1.skills{
 /*Footer*/
 #footer{
   background-color: #F6DCAC;
-  padding: 0 15%;
-
+  padding: 5px 15%;
 }
 
 p.footer{
