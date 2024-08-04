@@ -1,0 +1,133 @@
+/* Importing custom font for retro gaming feel */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+ 
+h1.cover-heading{
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  padding-top: 4rem;
+  color: white;
+}
+
+h2.lead{
+  font-family: "Caveat", cursive;
+  font-size:xx-large;
+  font-weight:600;
+  padding: 4rem;
+  text-align: center;
+  color: white;
+}
+
+body{
+  background-image: url("imgs/DSC_7596.JPG");
+}
+
+#content {
+  min-height: calc(100vh - 40px);
+}
+
+/*Navigation Bar*/
+.nav-link{
+  font-family:"Kanit", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  padding: 2rem;
+  margin: 8px;
+}
+
+/*Title*/
+
+img.cover{
+  width: 50%;
+}
+
+/*Resume link button*/
+#resume {
+  /* Centring the button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+button.game-style{
+  /* Making the button interactive and center aligned */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+ 
+  /* Styling the button */
+  width: 16em;
+  height: 3.2em;
+  padding: 0 1em;
+  border: none;
+  border-radius: 3px;
+  background-color: #f04e23;
+  color: #fff;
+ 
+  /* Applying custom font */
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.8vw;
+ 
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+}
+
+span {
+  /* Positioning tooltip relative to the button */
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  opacity: 0; /* Initially hiding the tooltip */
+  margin-bottom: 1em;
+  padding: 1em;
+ 
+  /* Styling tooltip */
+  background-color: #303030;
+  font-size: 0.6em;
+  line-height: 1.6;
+  text-align: left;
+  white-space: nowrap;
+ 
+  /* Setting initial state for animation */
+  transform: translate(-50%, 1em);
+ 
+  /* Making the changes smooth for animation */
+  transition: all 0.15s ease-in-out;
+}
+ 
+span::before {
+  /* Creating a triangle at the top of tooltip */
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 0.5em solid transparent;
+  border-top-color: #303030;
+  transform: translate(-50%, 0);
+}
+
+button.game-style:hover span {
+  /* Making tooltip visible and moving it upwards */
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+/*Footer*/
+#footer{
+  background-color: #F6DCAC;
+  color: black;
+  font-family: "Kanit", sans-serif;
+  padding: 5px 15%;
+}
+
+.feature-box{
+  font-size: 30px;
+  text-align: center;
+}
+
