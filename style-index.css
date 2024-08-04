@@ -19,6 +19,12 @@ h2.lead{
   color: white;
 }
 
+mark{
+  color:red;
+  background: none;
+}
+
+
 body{
   background-image: url("imgs/DSC_7596.JPG");
 }
